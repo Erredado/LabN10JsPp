@@ -8,14 +8,14 @@
 <body>
     <script>
         let nombre = prompt("Introduzca su nombre: ");
-        let edad = parseInt(("Introduzca su edad: "));
+        let edad = parseInt(prompt("Introduzca su edad: "));
         let esEstudiante = prompt("¿Es estudiante? (si / no)");
 
         console.log(nombre, edad, esEstudiante);
-        if(esEstudiante === "si" && edad < 18)
+        if(esEstudiante == "si" && edad < 18)
         {
             console.log("Usted no es mayor de edad, su edad es: " + edad + ", ademas es estudiante por lo tanto tiene derecho a descuento.")
-        }else if(esEstudiante === "si" && edad > 18){
+        }else if(esEstudiante == "si" && edad > 18){
             console.log("Usted es mayor de edad, su edad es: " + edad + ", ademas es estudiante por lo tanto tiene derecho a descuento.")
         }else{
             console.log("Su edad es: " + edad + ", pero no es estudiante por lo tanto no tiene derecho a descuento.")
